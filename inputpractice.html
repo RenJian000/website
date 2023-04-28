@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>瞎搞</title>
+    <script>function reset(){document.getElementById("aaa").innerHTML=""};</script>
+    <script>function rec(){var a=document.getElementById("bbb");document.getElementById("aaa").innerHTML=a.value;};</script>
+    <script>function lock(){document.getElementById("bbb").disabled="disabled";document.getElementById("lock").disabled="disabled";document.getElementById("unlock").disabled="";};</script>
+    <script>function unlock(){document.getElementById("bbb").disabled="";document.getElementById("unlock").disabled="disabled";document.getElementById("lock").disabled="";};</script>
+</head>
+<body>
+    <div id="aaa" style="word-wrap:break-word;"></div>
+    <input type="text" id="bbb">
+    <button onclick="rec();">输出</button>
+    <button onclick="reset()">重置</button>
+    <button onclick="lock();" id="lock">锁定</button>
+    <button onclick="unlock();" id="unlock" disabled="disabled">解锁</button></br>
+    <a href="https://www.bilibili.com/video/BV1GJ411x7h7/"><button>Button</button></a>
+    </br><a href="index.html">◀返回</a>
+</body>
